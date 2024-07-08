@@ -1,0 +1,14 @@
+.hackPage-main{
+    /* padding-top: 4.5em; */
+}
+
+.hackpage-main-content{
+    padding: 2em 2em;
+}
+
+.hackpage-card-container{
+    width: 15em;
+    background-color: red;
+    height:20em;
+    border-radius: 2em;
+}

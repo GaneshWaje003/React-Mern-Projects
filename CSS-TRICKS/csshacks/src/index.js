@@ -3,11 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Login from './Components/pages/Login';
+import Register from './Components/pages/Register';
+import HackPage from './Components/pages/HackPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/hackPage" element={<HackPage />} />
+          <Route path="/toFlutterHacks" element={<HackPage codeType={"flutter"} />} />
+          <Route path="/toCssHacks" element={<HackPage codeType={"css"} />} />
+          <Route path="/toAndroidHacks" element={<HackPage codeType={"android"} />} />
+        </Routes>
+      </BrowserRouter>
   </React.StrictMode>
 );
 

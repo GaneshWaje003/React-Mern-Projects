@@ -1,11 +1,18 @@
 .Navbar-main {
     display: flex;
     width: 100%;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top:0;
+    z-index: 110;
+    background-color:  #222f3c;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
     padding: 1em;
-    border-radius: 0.3em;
 }
+
+.Navbar-main:hover{
+    box-shadow: 1px 1px 5px  rgba(0,0,0,0.2);
+}
+
 
 nav {
     width: 100%;
@@ -16,11 +23,13 @@ nav {
 
 nav a {
     color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     text-decoration: none;
 }
 
 .website-title-navbar {
     flex-shrink: 0;
+    padding-left: 2em;
 }
 
 .website-title-navbar a {
@@ -40,7 +49,7 @@ ul {
 
 ul a {
     margin-left: 3em;
-    font-size: 1.4em;
+    font-size: 1.3em;
     transition: all 0.4s ease;
     padding-inline: 0.5em;
 }
