@@ -17,9 +17,9 @@ root.render(
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/hackPage" element={<HackPage />} />
-          <Route path="/toFlutterHacks" element={<HackPage codeType={"flutter"} />} />
-          <Route path="/toCssHacks" element={<HackPage codeType={"css"} />} />
-          <Route path="/toAndroidHacks" element={<HackPage codeType={"android"} />} />
+          <Route path="/toFlutterHacks" element={<HackPage codeType={"flutters"} />} />
+          <Route path="/toCssHacks" element={<HackPage codeType={"csses"} />} />
+          <Route path="/toAndroidHacks" element={<HackPage codeType={"androids"} />} />
         </Routes>
       </BrowserRouter>
   </React.StrictMode>
