@@ -14,12 +14,29 @@
 .hackpage-card-container{
     width: 15vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 1rem 3rem;
-    background-color: #ddf;
+    padding: 1rem 1rem;
+    background: linear-gradient(180deg, #25d0ff , #0073ff );
     height:40vh;
+    cursor: pointer;
+    object-fit: cover;
     border-radius: 2em;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow:-3px 3px 1px 1px rgba(0,0,0,0.6);
+}
+.hackpage-card-container:hover{
+    box-shadow:-3px 3px 1px 1px rgba(0,0,0,0.7);
+    transform: scale(1.03);
+  }
+
+.hackpage-card-container img{
+    width: 100%;
+    height: 60%;
+    border-radius: 1.5em;
+    object-fit: cover;
+    margin-bottom: 2rem;
 }
 
 @media (max-width : 768px) {

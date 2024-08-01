@@ -7,6 +7,8 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Login from './Components/pages/Login';
 import Register from './Components/pages/Register';
 import HackPage from './Components/pages/HackPage';
+import UploadHacks from './Components/pages/UploadHacks';
+import HackInfo from './Components/pages/HackInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,9 +16,11 @@ root.render(
       <BrowserRouter>
       <Routes>
           <Route path="/" element={<App />} />
+          <Route path="/uploadPage" element={<UploadHacks />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/hackPage" element={<HackPage />} />
+          <Route path="/hackinfo" element={<HackInfo />} />
           <Route path="/toFlutterHacks" element={<HackPage codeType={"flutters"} />} />
           <Route path="/toCssHacks" element={<HackPage codeType={"csses"} />} />
           <Route path="/toAndroidHacks" element={<HackPage codeType={"androids"} />} />
